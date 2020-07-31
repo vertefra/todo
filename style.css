@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap');
+/* font-family: 'Lobster', cursive; */
+/* font-family: 'Raleway', sans-serif; */
+
+h1, h2, h3{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+    text-shadow: 3px 3px 3px #AA3939;    ;
+    font-size: 110px;
+    margin: 80px 0 20px 80px;
+    align-self: flex-start;
+}
+
+body{
+    background-color:#D4EE9F;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Board */
+
+#add-todo {
+    border: none;
+    padding: 20px;
+    width: 200px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+    box-shadow: 4px 4px 2px #AA3939;
+}
+
+#add-todo:hover{
+    color: #0D4D4D;
+}
+
+#add-todo:active{
+    box-shadow: none;
+    outline: none;
+}
+
+#add-todo:visited, #add-todo:focus{
+    outline: none;
+}
+
+#board {
+    background-color: #D4EE9F;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+h3, .note > button{
+    background-color: #0D4D4D;
+    font-family: 'Lobster', cursive;
+    font-size: 30px;
+    width: 50%;
+    border-radius: 5px;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Setting columns */
+.column{
+    border-radius: 5px;
+    margin: 0 5px;
+    width: 30%;
+    height: 100vh;
+    background-color: #669999;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* To do note *******************************/
+
+.note {
+    background-color: beige;
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:80%;
+    margin: 5px 10px;
+    border-radius: 10px;
+}
+
+.title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    width: 90%;
+    text-align: center;
+    border:none;
+    padding: 5px 0;
+}
+
+.body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    resize: none;
+    width: 90%;
+    border: none;
+    border-top: 2px solid black;
+    text-align: center;
+    height:60px;
+    padding: 5px 0;
+}
+
+.note > button{
+    width: 50%;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.note > button:hover{
+    color: #D4EE9F;
+}
+
+/* note in editing mode */
+
+.editing {
+    background-color: #AA3939;
+}
+
